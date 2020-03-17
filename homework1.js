@@ -1,4 +1,5 @@
 ﻿'use strict ';
+
 let money = prompt("Введите ваш бюджет на месяц?", "");
 let time = prompt('Введите дату в формате YYYY-MM-DD','');
 
