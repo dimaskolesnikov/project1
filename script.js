@@ -1,38 +1,21 @@
 ﻿'use strict ';
+let money = prompt("Введите ваш бюджет на месяц?", "");
+let time = prompt('Введите дату в формате YYYY-MM-DD','');
 
-let hello = 'Hello world!';
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    income: [],
+    savings: true
+};
 
-let message;
+let a = prompt('Введите обязательную статью расходов в этом месяце', ''),
+    b = prompt('Во сколько обойдется', ''),
+    c = prompt('Введите обязательную статью расходов в этом месяце', ''),
+    d = prompt('Во сколько обойдется', '');
 
-// копируем значение 'Hello world' из переменной hello в переменную message
-message = hello;
+appData.expenses[a] = b;
+appData.expenses[c] = d;
 
-// теперь две переменные содержат одинаковые данные
-//alert(hello); // Hello world!
-//alert(message); // Hello world!
-
-let arr = ['rita', 'aac', 'adc'];
-
-//console.log( arr[0] );
-//alert('hello world');
-
-let answer = prompt("ifvbbdfvbhjbhvdj", "lff");
-
-//console.log( typeof(arr);
-
-
-let incr = 10,
-    decr = 10;
-
-
-    console.log(incr++);
-    console.log(--decr);
-
-let a = +prompt('aaa');
-    console.log( typeof(a) );
-
-let num = 50;
-
-(num == 50) ? console.log('верно') : console.log('НЕВЕРНО');
-    
-
+alert( appData.budget / 30);
