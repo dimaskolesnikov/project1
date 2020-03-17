@@ -1,6 +1,5 @@
-//'use strict'
-
-/*let money = prompt("elseall?", "");
+﻿'use strict ';
+let money = prompt("Введите ваш бюджет на месяц?", "");
 let time = prompt('Введите дату в формате YYYY-MM-DD','');
 
 let appData = {
@@ -19,4 +18,4 @@ let a = prompt('Введите обязательную статью расхо�
 appData.expenses[a] = b;
 appData.expenses[c] = d;
 
-alert( appData.budget / 30);*/
+alert( appData.budget / 30);
